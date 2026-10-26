@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Senda">
+  <rect width="32" height="32" rx="6" fill="#16130f"/>
+  <path fill="#f4ecdf" d="M8.5 27V14.4a7.5 7.5 0 0 1 15 0V27h-15z"/>
+  <path fill="#16130f" d="M11.6 27V16.2a4.4 4.4 0 0 1 8.8 0V27h-8.8z"/>
+  <rect x="15.15" y="20.4" width="1.7" height="6.6" rx="0.4" fill="#e08a45"/>
+</svg>
