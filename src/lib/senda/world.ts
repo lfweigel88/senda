@@ -18,7 +18,7 @@ export const DISTRICTS: District[] = [
     level: "A2",
     name: "La Ciudad Baja",
     epithet: "The lower city",
-    blurb: "Yesterday, the pret\u00e9rito, weather, comparisons.",
+    blurb: "Yesterday, the pretérito, weather, comparisons.",
     start: "a2-estacion",
   },
   {

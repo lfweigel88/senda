@@ -174,8 +174,8 @@ export const useSenda = create<State & Actions>()(
           append([
             {
               kind: "you",
-              text: `Escuchar un eco \u00b7 ${echoed.word}`,
-              gloss: `Hear an echo \u00b7 ${echoed.gloss}`,
+              text: `Escuchar un eco · ${echoed.word}`,
+              gloss: `Hear an echo · ${echoed.gloss}`,
             },
           ]);
         },
@@ -191,7 +191,7 @@ export const useSenda = create<State & Actions>()(
               {
                 kind: "system",
                 text: silent.length
-                  ? `Hacen falta tres palabras conocidas. A\u00fan callan: ${silent.join(", ")}.`
+                  ? `Hacen falta tres palabras conocidas. Aún callan: ${silent.join(", ")}.`
                   : "Hacen falta tres palabras conocidas antes del repaso.",
                 gloss: silent.length
                   ? `Three known words are needed. Still silent: ${silent.join(", ")}.`
@@ -257,8 +257,8 @@ export const useSenda = create<State & Actions>()(
           if (becameKnown) {
             lines.push({
               kind: "system",
-              text: `Anotas \u00ab${word.word}\u00bb en el cuaderno. Las puertas de este cuarto se abren.`,
-              gloss: `You enter \u201c${word.word}\u201d in the phrasebook. The doors of this room open.`,
+              text: `Anotas «${word.word}» en el cuaderno. Las puertas de este cuarto se abren.`,
+              gloss: `You enter “${word.word}” in the phrasebook. The doors of this room open.`,
             });
             const stats = levelStats(word.level, words);
             if (stats.known === stats.total) {
@@ -279,13 +279,13 @@ export const useSenda = create<State & Actions>()(
           if (becameFirm) {
             lines.push({
               kind: "system",
-              text: `El eco se queda. \u00ab${word.word}\u00bb queda retenida.`,
-              gloss: `The echo holds. \u201c${word.word}\u201d is retained.`,
+              text: `El eco se queda. «${word.word}» queda retenida.`,
+              gloss: `The echo holds. “${word.word}” is retained.`,
             });
           } else if (!option.correct && trial.source !== "discover") {
             lines.push({
               kind: "system",
-              text: "El eco se deshace. La palabra sigue conocida; a\u00fan no est\u00e1 retenida.",
+              text: "El eco se deshace. La palabra sigue conocida; aún no está retenida.",
               gloss: "The echo frays. The word stays known; it is not retained yet.",
             });
           }
